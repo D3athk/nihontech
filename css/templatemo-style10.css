@@ -142,7 +142,7 @@ a:focus {
 #hero {
   background-image: url(../img/rosebg.jpg);
   background-repeat: no-repeat;
-  height: 130vh;
+  height: 80vh;
   min-height: 375px;
   position: relative;
 }
