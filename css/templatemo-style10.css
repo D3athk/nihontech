@@ -145,6 +145,7 @@ a:focus {
   height: 100vh;
   min-height: 375px;
   position: relative;
+  
 }
 
 @media (min-height: 830px) {
@@ -558,6 +559,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
   }
 
   .tm-btn-submit {
