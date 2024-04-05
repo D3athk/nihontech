@@ -39,6 +39,7 @@ a:focus {
 
 .tm-section-pad-top {
   padding-top: 30px;
+	background-color:#000;
 }
 
 .tm-text-primary {
