@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  color: #000;
+  color: #8f8f8f;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -39,7 +39,6 @@ a:focus {
 
 .tm-section-pad-top {
   padding-top: 30px;
-	background-color:#000;
 }
 
 .tm-text-primary {
@@ -142,20 +141,10 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-position: center,center;
-  background-repeat: repeat, no-repeat;
-  position: relative,fixed; /* Define a posição fixa */
-  top: 0; /* Alinha o elemento no topo */
-  left: 0; /* Alinha o elemento à esquerda */
-  width: 100%; /* Define a largura para cobrir toda a largura da tela */
+ background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
-
-  background-size:inherit,cover;
-  
-  z-index: 9999; /* Garante que o elemento fique acima de outros elementos */
-  background-image: url(../img/icaro1234f.gif), url(../img/bgrose.jpg); /* Adiciona o GIF como imagem de fundo */
-  pointer-events: none; /* Garante que o GIF não seja clicável */
+  position: relative;
   
 }
 
