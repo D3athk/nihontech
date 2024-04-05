@@ -14,6 +14,10 @@
   </head>
 
   <style>
+    #icaruss{
+
+      
+    }
    .gif {
     background-position: center;
   background-repeat: repeat;
@@ -23,7 +27,7 @@
   width: 100%; /* Define a largura para cobrir toda a largura da tela */
   height: 100%; /* Define a altura para cobrir toda a altura da tela */
   z-index: 9999; /* Garante que o elemento fique acima de outros elementos */
-  background-image: url('img/icaro1234f.gif'); /* Adiciona o GIF como imagem de fundo */
+  background-image: url(../img/icaro1234f.gif); /* Adiciona o GIF como imagem de fundo */
   pointer-events: none; /* Garante que o GIF não seja clicável */
 }
 .flyangel {
@@ -53,14 +57,26 @@ iframe { height: 100% }
     z-index: 9999;
     background: url('img/load.gif') 50% 50% no-repeat white;
 }
-
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajuste conforme necessário */
+  overflow: hidden;
+}
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 </style>
   <body>
   <div id="loader" class="loader"></div>
 <div style="display:none" id="tudo_page">
-  <div class="gif"></div>
     <!-- Hero section -->
-    <section id="hero" class="text-white tm-font-big tm-parallax">
+    <section id="hero" class=" text-white tm-font-big tm-parallax">
       <!-- Navigation -->
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
         <div class="container">
@@ -103,8 +119,12 @@ iframe { height: 100% }
   
     </section>
 
-    <section id="introduction" class="tm-section-pad-top">
+    <section id="icaruss" class="tm-section-pad-top video-section">
+      
       <div class="container">
+        <video autoplay muted loop controls="controls" constrols preload="auto" autoplay="autoplay" loop muted playsinline id="video-bg">
+          <source src="img/deu.mp4" type="video/mp4">
+        </video>
         <div class="row">
           <div class="col-lg-6">
             <img src="img/the-town.jpg" alt="Image" class="img-fluid tm-intro-img" />
@@ -139,6 +159,7 @@ iframe { height: 100% }
 
 
       </div>
+      </section>
 
 <section id="work"  style="background: url(img/bg2.jpg) center center no-repeat fixed;
 
@@ -200,5 +221,6 @@ iframe { height: 100% }
     $("#tudo_page").toggle("fast");
 });
 </script>
+</div>
 </body>
 </html>

@@ -141,11 +141,20 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: url(../img/rosebg.jpg);
-  background-repeat: no-repeat;
+  background-position: center,center;
+  background-repeat: repeat, no-repeat;
+  position: relative,fixed; /* Define a posição fixa */
+  top: 0; /* Alinha o elemento no topo */
+  left: 0; /* Alinha o elemento à esquerda */
+  width: 100%; /* Define a largura para cobrir toda a largura da tela */
   height: 100vh;
   min-height: 375px;
-  position: relative;
+
+  background-size:inherit,cover;
+  
+  z-index: 9999; /* Garante que o elemento fique acima de outros elementos */
+  background-image: url(../img/icaro1234f.gif), url(../img/bgrose.jpg); /* Adiciona o GIF como imagem de fundo */
+  pointer-events: none; /* Garante que o GIF não seja clicável */
   
 }
 
